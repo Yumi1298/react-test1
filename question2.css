@@ -1,0 +1,12 @@
+/* 因為.container .shop-list li.item的權重比.container .shop-list .item大，所以不能覆蓋
+解決的方式
+使用 .container .shop-list li.item。
+使用 !important。
+.container .shop-list .item 定義在後。 */
+
+.container .shop-list li:nth-child(odd) {
+  background-color: blue;
+}
+.container .shop-list li:nth-child(even) {
+  background-color: green;
+}
